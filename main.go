@@ -43,7 +43,7 @@ func main() {
 
 	pulumi.Run(func(ctx *pulumi.Context) error {
 
-		// Proiect Variables
+		// Project Variables
 		// -----------------
 		project := Project{
 			name: "stratusLabs",
@@ -79,7 +79,7 @@ func main() {
 		}
 
 		wb := WebBucket{
-			name:          "www.stratuslabs.net",
+			name:          fmt.Sprintf("www.%s", domain.name),
 			indexDocument: "index.html",
 			errorDocument: "error.html",
 		}
