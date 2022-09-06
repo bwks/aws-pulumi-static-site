@@ -1,0 +1,3 @@
+name: stratuslabs-website
+description: A minimal AWS Go Pulumi program
+runtime: go
